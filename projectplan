@@ -5,8 +5,8 @@ Webanwendung: To-Do-Liste
 - Beispiel für Grundidee: todomvc.yew.rs
 - Verwendung von Actor framework for Rust und Yew
 - Bearbeitung über Github
-- SQLite für Datenbanknutzung
-- Diesel
+- PostgreSQL für Datenbanknutzung
+- Docker
 
 - To-Do-Liste Übersicht von allen Aufgaben
 - Eingabefenster zum Eintragen von Aufgaben oder
