@@ -1,0 +1,20 @@
+Webanwendung: To-Do-Liste 
+
+20.05. - Github Repository Link mit Victor teilen!
+
+- Beispiel für Grundidee: todomvc.yew.rs
+- Verwendung von Actor framework for Rust und Yew
+- Bearbeitung über Github
+- SQLite für Datenbanknutzung
+- Diesel
+
+- To-Do-Liste Übersicht von allen Aufgaben
+- Eingabefenster zum Eintragen von Aufgaben oder
+- “Aufgabe hinzufügen” Button
+- 3 Spalten Aktiv / In Bearbeitung / Fertig
+- Filter-Funktionen für Items wie bei todomvc
+- Um Aufgaben “In Bearbeitung” und “Fertig” zu verschieben, soll ein zusätzliches Feld ausgefüllt werden, welches “User” heißt
+- Für Gruppenaufgaben können mehrere User eingetragen werden
+- Ideen als Zusatz:
+    - Prioritätsstufe für Aufgaben (mit Farbcodierung oder Kennzeichnung)
+    - Deadline für Aufgaben (geänderte Priorität im Laufe der Zeit?)
