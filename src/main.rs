@@ -1,3 +1,4 @@
+#![recursion_limit="256"]
 use yew::prelude::*;
 
 struct Model {
@@ -37,8 +38,8 @@ impl Component for Model {
             Msg::Update(s) => {
                 self.input = s
             }
-            Msg::Remove(i) => {
-                self.todos.remove(i);
+            Msg::Remove(index) => {
+                self.todos.remove(index);
             }
             Msg::RemoveAll => {
                 self.todos = vec![];
@@ -53,6 +54,14 @@ impl Component for Model {
     }
 
     fn view(&self) -> Html {
+        let view_todo = |(index, todo): (usize, &String)| {
+            html! {
+                <li>
+                    {todo}
+                    <button onclick= self.link.callback(move |_| Msg::Remove(index))>{"X"}</button>
+                </li>
+            }
+        };
         html! {
             <div>
                 <h1>{"Todo App"}</h1>
@@ -65,7 +74,10 @@ impl Component for Model {
                     })/>
 
                 <button onclick=self.link.callback(|_| Msg::RemoveAll)>{ "Delete all Todos!" }</button>
-                <ul>{for self.todos.iter()}</ul>           
+                <ul>
+                    {for self.todos.iter().enumerate().map(|t| view_todo(t))}
+                </ul>
+                
             </div>
         }
     }

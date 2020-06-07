@@ -1,7 +1,0 @@
-[package]
-name = "todo_app"
-version = "0.0.1"
-authors = ["Enter author name here"]
-
-[dependencies]
-yew = {git = "https://github.com/DenisKolodin/yew"}
