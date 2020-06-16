@@ -1,7 +1,5 @@
 Webanwendung: To-Do-Liste 
 
-20.05. - Github Repository Link mit Victor teilen!
-
 - Beispiel für Grundidee: todomvc.yew.rs
 - Verwendung von Actor framework for Rust und Yew
 - Bearbeitung über Github
@@ -18,3 +16,9 @@ Webanwendung: To-Do-Liste
 - Ideen als Zusatz:
     - Prioritätsstufe für Aufgaben (mit Farbcodierung oder Kennzeichnung)
     - Deadline für Aufgaben (geänderte Priorität im Laufe der Zeit?)
+
+
+Präsentation (erste & zweite Juli Woche):
+1. Aufgabe des Projekts / Ziel
+2. Umsetzung mit Rust / Beispielprobleme
+3. Kleine Demo
